@@ -53,8 +53,6 @@
 
 // console.log(mango(67, 78));
 // console.log(mango(11, 53));
-// console.log(mango(2, 3));
-// console.log(mango(4, 3));
 // console.log(mango(9, 5));
 // console.log(mango(8, 81));
 
@@ -68,4 +66,24 @@
 //   let LPH = 0.5;
 //   let LitresTotal = Math.floor(time * LPH);
 //   return LitresTotal;
+// }
+
+// ~ Transportation on vacation
+// function rentalCarCost(d) {
+//   const rentCost = 40;
+//   if (d < 3) {
+//     return d * rentCost;
+//   }else if (d < 7) {
+//     return (d * rentCost) - 20
+//   } else {
+//     return (d * rentCost) - 50
+//   }
+// }
+
+// ~ refactored
+// function rentalCarCost(d) {
+//   const rentCost = 40;
+//   return (d < 3) ? d * rentCost
+//     : (d < 7) ? (d * rentCost) - 20
+//     : (d * rentCost) - 50
 // }
