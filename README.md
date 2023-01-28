@@ -1,2 +1,1 @@
-# Square(n)Sum
- Codewars task 8kyu
+# This repository is about tasks which I've completed for Codewars.
