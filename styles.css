@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+
+}
+
+.ordered-lists {
+  display: flex;
+
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.title {
+  /* text-decoration: line-through; */
+  text-align: center;
+  color: red;
+}
