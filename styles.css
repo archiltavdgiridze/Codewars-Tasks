@@ -2,12 +2,10 @@
 
 body {
   font-family: 'Karla', sans-serif;
-
 }
 
 .ordered-lists {
   display: flex;
-
 }
 
 a {
@@ -17,7 +15,6 @@ a {
 }
 
 .title {
-  /* text-decoration: line-through; */
   text-align: center;
   color: red;
 }
