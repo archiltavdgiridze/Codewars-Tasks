@@ -113,7 +113,7 @@
 // console.log(basicOp('+', 1, 1))
 // console.log(basicOp('-', 15, 18))
 // console.log(basicOp('*', 5, 5))
-// console.log(basicOp("/", 49, 7));
+// console.log(basicOp("", 49, 7));
 // console.log(basicOp("#", 49, 7));
 
 // ~ 9 Remove exclamation marks
@@ -181,9 +181,88 @@
 //   }
 // }
 
-// ~ refactor 
+// ~ refactor
 // function findNextSquare(sq) {
 //   return Math.sqrt(sq) % 1 ? -1 : Math.pow(Math.sqrt(sq) + 1, 2);
 // }
-//console.log(findNextSquare(121));
+// console.log(findNextSquare(121));
+
+// ~ 16 Century fro year
+// function century(year) {
+//   return Math.floor((year-1)/100)+1
+// }
+// console.log(century(2023))
+
+// ~ 17 Beginner Series #3 Sum of Numbers
+// function getSum(a, b) {
+//   if (a !== b) {
+//     let count = 0
+//     let min= Math.min(a, b)
+//     let max = Math.max(a, b);
+//     for (let i = min; i <= max; i++) {
+//       count += i
+//     }
+//     return count
+//   }else {
+//     return a
+//   }
+// }
+
+// ~ 18 How good are you really?
+// ? this code sums classpoint array, adds yourPoint and then calculates average by sum / (array.lenght + 1), + 1 is for adding your point to total number of division
+// function betterThanAverage(classPoints, yourPoints) {
+//   let sum = 0 + yourPoints;
+//   for (let i = 0; i < classPoints.length; i++) {
+//     sum = sum + classPoints[i];
+//   }
+// let average = sum / (classPoints.length + 1);
+//   return yourPoints > average ? true : false;
+// }
+// console.log(betterThanAverage([29, 55, 74, 60, 11, 90, 67, 28], 21));
+
+// ~ 19 Count of positives / sum of negatives
+// ? this code checks an input array and outputs count of positive numbers and the sum of negative ones. if the array is empty, function returns empty array.
+// function countPositivesSumNegatives(input) {
+//   let outputArr = [];
+//   let countPositive = 0;
+//   let sumNegative = 0;
+//   if (input === null || input === undefined || input === []) return [];
+//   for (let i = 0; i < input.length; i++) {
+//     input[i] > 0
+//       ? countPositive++
+//       : input[i] < 0
+//       ? (sumNegative += input[i])
+//       : 0;
+//   }
+//   outputArr.push(countPositive, sumNegative);
+//   return input === null || input.length < 1 ? [] : outputArr;
+// }
+// console.log(
+//   countPositivesSumNegatives([
+//     0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14,
+//   ])
+// );
+
+// ~ 20 Sum of two lowest positive integers
+// function sumTwoSmallestNumbers(numbers) {
+//   numbers.sort((a, b) => a - b);
+//   return numbers[0] + numbers[1]
+// }
+// console.log(
+//   "🚀 | file: index.js:257 | sumTwoSmallestNumbers", sumTwoSmallestNumbers([19, 5, 42, 2, 77])
+// );
+
+// ~ 21 Rock, Paper, Scissors!
+// const rps = (p1, p2) => {
+//   return p1 == p2
+//     ? "Draw!"
+//     : (p1 === "rock" && p2 === "scissors") ||
+//       (p1 === "paper" && p2 === "rock") ||
+//       (p1 === "scissors" && p2 === "paper")
+//       ? "Player 1 won!"
+//       : "Player 2 won!"
+// };
+// console.log("🚀 | file: index.js:262 | rps", rps("rock", "paper"));
+// console.log("🚀 | file: index.js:262 | rps", rps("scissors", "paper"));
+// console.log("🚀 | file: index.js:262 | rps", rps("scissors", "scissors"));
 
