@@ -266,3 +266,47 @@
 // console.log("🚀 | file: index.js:262 | rps", rps("scissors", "paper"));
 // console.log("🚀 | file: index.js:262 | rps", rps("scissors", "scissors"));
 
+// ~ 22 Returning Strings
+// function greet(name) {
+//   return "Hello, " + name + " how are you doing today?";
+// }
+
+// ~
+// ?
+// !
+// todo
+
+// ~ 23 A needle in a haystack
+// function findNeedle(haystack) {
+//   let count = 0;
+//   for(let i = 0; i < haystack.length; i++) {
+//     count++
+//     if (haystack[i] == "needle") {
+//       return "found the needle at position " + (count - 1)
+//     }
+//   }
+// }
+
+// console.log(
+//   "🚀 | file: index.js:284 | findNeedle",
+//   findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
+// );
+
+// ~ 24 Invert values
+// function invert(array) {
+//   let inverted = [];
+//   for(let i = 0; i<array.length; i++) {
+//     inverted.push(array[i] * -1);
+//   }
+//   return inverted
+// }
+
+// console.log(invert([1, 2, 3, 4, 5]));
+// console.log(invert([1, -2, 3, -4, 5]));
+
+// ~ 25 Keep up the hoop
+// function hoopCount(n) {
+//   return n < 10
+//     ? "Keep at it until you get it"
+//     : "Great, now move on to tricks";
+// }
