@@ -310,3 +310,50 @@
 //     ? "Keep at it until you get it"
 //     : "Great, now move on to tricks";
 // }
+
+////  Cubes in the box
+//// function f(x, y, z) {
+////   const s = Math.min(x++, y++, z++);
+////   const sumS = (s * (s + 1)) / 2;
+////   const sumSq = (sumS * (2 * s + 1)) / 3;
+////   const sumCub = sumS * sumS;
+////   console.log(s);
+////   console.log(sumS);
+////   console.log(sumSq);
+////   console.log(sumCub);
+////   return (
+////     x * y * z * s -
+////     (x * y + x * z + y * z) * sumS +
+////     (x + y + z) * sumSq -
+////     sumCub
+////   );
+//// }
+//console.log(f(2, 2, 3));
+// console.log(f(3, 3, 3));
+// console.log(f(3, 4, 2));
+
+// ~ 26 Sum of Minimums!
+// function sumOfMinimums(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i].sort((a, b) => a - b);
+//     sum += arr[i][0];
+//   }
+//   return sum;
+// }
+
+// console.log(
+//   sumOfMinimums([
+//     [1, 2, 3, 4, 5],
+//     [5, 6, 7, 8, 9],
+//     [20, 21, 34, 56, 100],
+//   ])
+// );
+// console.log(
+//   sumOfMinimums([
+//     [7, 9, 8, 6, 2],
+//     [6, 3, 5, 4, 3],
+//     [5, 8, 7, 4, 5],
+//   ])
+// );
+
