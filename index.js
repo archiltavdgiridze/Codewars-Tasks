@@ -372,4 +372,45 @@
 // }
 
 // ~ 29 Removing Elements
+// function repeatStr(n, s) {
+//   let repeated = "";
+//   for (let i = 0; i < n; i++) {
+//     repeated += s
+//   }
+//   return repeated;
+// }
+
+// function repeatStr(n, s) {
+//   return s.repeat(n);
+// }
+
+// ~ 30 List filtering 
+// function filter_list(l) {
+//   return l.filter(Number.isInteger);
+// }
+// console.log(filter_list([1, 2, "a", "b"]));
+
+// ~ 31 Sum of cubes
+// function sumCubes(n) {
+//   let sum = 0;
+//   for (let i = 0; i <= n; i++) {
+//     sum += Math.pow(i, 3);
+//   }
+//   return sum;
+// }
+// console.log(sumCubes(3));
+
+// ~ 32 Count by X
+// function countBy(x, n) {
+//   let z = [];
+//   let count = 0;
+//   for (let i = 0; i <= n-1; i++) {
+//     count += x;
+//     z.push(count);
+//   }
+//   return z;
+// }
+// console.log(countBy(2,4));
+
+// ~ 33 
 
