@@ -357,3 +357,19 @@
 //   ])
 // );
 
+// ~ 27 Trimming a string
+// function trim(str, size) {
+//   return str.length > size
+//     ? size > 3
+//       ? str.slice(0, size - 3) + "..."
+//       : str.slice(0, size) + "..."
+//     : str;
+// }
+
+// ~ 28 return negative
+// function makeNegative(num) {
+//   return num < 0 ? num : num === 0 ? 0 : num * -1;
+// }
+
+// ~ 29 Removing Elements
+
