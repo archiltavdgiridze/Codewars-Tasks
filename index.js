@@ -384,7 +384,7 @@
 //   return s.repeat(n);
 // }
 
-// ~ 30 List filtering 
+// ~ 30 List filtering
 // function filter_list(l) {
 //   return l.filter(Number.isInteger);
 // }
@@ -412,5 +412,43 @@
 // }
 // console.log(countBy(2,4));
 
-// ~ 33 
+// ~ 33 Categorize New Member
+// function openOrSenior(data) {
+//   let outArr = [];
+//   for (let i = 0; i < data.length; i++) {
+//     data[i][0] >= 55 && data[i][1] > 7
+//       ? outArr.push("Senior")
+//       : outArr.push("Open");
+//   }
+//   return outArr;
+// }
+// console.log(
+//   openOrSenior([
+//     [18, 20],
+//     [45, 2],
+//     [61, 12],
+//     [37, 6],
+//     [21, 21],
+//     [78, 9],
+//   ])
+// );
 
+// ~ 34 Delete occurrences of an element if it occurs more than n times
+// function deleteNth(arr, n) {
+//   let count = {};
+//   let sortedArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     // on the first time, -if- initializes counting and adds first number to "sortedArr" array.
+//     if (!count[arr[i]]) {
+//       count[arr[i]] = 1;
+//       sortedArr.push(arr[i]);
+//     } else if (count[arr[i]] < n) {
+//       // then when array(arr) numbers(count[arr[i]]) are less than n, it gets added to a count object and gets pushed to an array(sortedArr)
+//       count[arr[i]]++;
+//       sortedArr.push(arr[i]);
+//     }
+//   }
+//   return sortedArr;
+// }
+
+// console.log(deleteNth([1, 8, 7, 7, 7, 8, 2, 7, 8], 2));
